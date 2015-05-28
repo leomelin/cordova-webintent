@@ -66,6 +66,17 @@ Gets the extra that this app was invoked with. For example:
         }
     );
 
+### clearExtra ###
+Clears the extra that this app was invoked with. For example:
+
+    window.plugins.webintent.clearExtra(window.plugins.webintent.EXTRA_TEXT,
+        function() {
+            // extra is now cleared
+        }, function() {
+            // There was no extra supplied.
+        }
+    );
+
 ### getUri ###
 Gets the Uri the app was invoked with. For example:
 
